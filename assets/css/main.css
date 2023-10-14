@@ -835,6 +835,32 @@ play button =======================
 	display: block;
 	position: absolute;
 	overflow: hidden;
+  margin-top: 10px;
+  }
+  .play-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .play-btn-container {
+      margin-top: 30px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .play-btn-container  {
+      margin-top: 30px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
   }
   
   .play-btn:before {
@@ -2046,12 +2072,12 @@ play button =======================
   background-position: center;
   margin-top: 0;
 }
-
 .hero h1{
   font-size: 44px;
   font-weight: 700;
   position: relative;
 }
+
 .hero::before {
   content: "";
   position: absolute;
@@ -2063,6 +2089,25 @@ play button =======================
   z-index: -10; 
 }
 
+.typing-text{
+  display: block; 
+  font-size: 35px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .typing-text {
+    height: 5px;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-text {
+    height: 5px;
+    font-size: medium;
+  }
+}
 .hero .container{
   margin-top: 40px;
 }
@@ -2112,7 +2157,6 @@ play button =======================
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   margin-bottom: 30px;
-  font-size: 28px;
 }
 
 .hero .btn-get-started {
@@ -2224,7 +2268,44 @@ play button =======================
   color: #fff;
 }
 .hero img{
-  width: 400px;
+  width: 200%;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero img {
+    margin-top: 10px;
+    width: 250px;
+  }
+}
+
+.hero-row{
+  margin-top: 120px;
+}
+@media (max-width: 768px) {
+  .hero-row{
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-row{
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
 }
 /*--------------------------------------------------------------
 # Blog
