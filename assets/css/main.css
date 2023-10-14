@@ -8,7 +8,7 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary: #1f74c4;
+  --color-primary: #081586;
   --color-secondary: #081586;
 }
 
@@ -23,7 +23,7 @@
 body {
   font-family: var(--font-default);
   color: #fff;
-  background-color: #000;
+  background-color:  linear-gradient(300deg,rgba(40, 226, 139, 0.950),rgba(206, 24, 206, 0.959), rgba(14, 16, 124, 0.952));
 }
 
 a {
@@ -1589,7 +1589,7 @@ play button =======================
 }
 
 .team .member .social a:hover {
-  color: whitesmoke;
+  color: rgb(65, 35, 35);
   border-color: var(--color-primary);
 }
 
@@ -2895,6 +2895,8 @@ Gallery Slider
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  border-radius: 15px;
+
 
   animation: test-animation 230s linear infinite;
 }
@@ -2917,4 +2919,5 @@ Gallery Slider
 .itemm img{
   width: 400px;
   height: 250px;
+  border-radius: 15px;
 }

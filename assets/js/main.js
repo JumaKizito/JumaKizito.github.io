@@ -328,14 +328,14 @@ window.addEventListener("scroll", function () {
   }
 });
 
-let items = document.querySelectorAll(".item");
+let items = document.querySelectorAll(".itemm");
 
-items.forEach((item) => {
-  item.addEventListener("mouseover", () => {
+items.forEach((itemm) => {
+  itemm.addEventListener("mouseover", () => {
     document.querySelector("#lemon").style.animationPlayState = "paused";
   });
 
-  item.addEventListener("mouseout", () => {
+  itemm.addEventListener("mouseout", () => {
     document.querySelector("#lemon").style.animationPlayState = "running";
   });
 });
