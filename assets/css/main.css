@@ -23,7 +23,7 @@
 body {
   font-family: var(--font-default);
   color: #fff;
-  background-color:  linear-gradient(300deg,rgba(40, 226, 139, 0.950),rgba(206, 24, 206, 0.959), rgba(14, 16, 124, 0.952));
+  background:  linear-gradient(300deg,rgba(40, 226, 139, 0.950),rgba(206, 24, 206, 0.959), rgba(14, 16, 124, 0.952));
 }
 
 a {
@@ -806,7 +806,7 @@ section {
 .about-btn {
 	color: #ffffff;
 	padding: 10px 40px;
-	border: 2px solid #0000FF;
+	border: 2px solid #ffff;
 	border-radius: 7px;
 	margin-top: 30px;
 	display: inline-block;
