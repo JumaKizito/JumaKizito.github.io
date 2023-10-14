@@ -373,7 +373,7 @@ section {
     transition: background 0.3s ease;
   }
   .header.scrolled {
-    background-color: #1f9dc4;
+    background-color: var(--color-primary);
   }
 .header.sticked {
   position: fixed;
