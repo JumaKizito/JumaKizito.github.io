@@ -98,7 +98,11 @@ section {
   position: relative;
   background: linear-gradient(rgba(117, 8, 90, 0.87), rgba(0, 0, 255, 0.897));
 }
-
+.breadcrumbs h1{
+  font-size: 44px;
+  font-weight: 700;
+  position: relative;
+}
 .breadcrumbs img{
   width: 400px;
 }
@@ -177,54 +181,56 @@ section {
 }
 
 
-
 /*==================================================
 --------------------Cursor--------------------------
 ================================================== */
-
 .cursor,
 .cursor2,
-.cursor3{
-	position: fixed;
-	border-radius: 50%;	
-	transform: translateX(-50%) translateY(-50%);
-	pointer-events: none;
-	left: -100px;
-	top: 50%;
-	mix-blend-mode: difference;
-	-webkit-transition: all 50ms linear;
-	transition: all 50ms linear;
-}
-.cursor{
-	background-color: #fff;
-	height: 0;
-	width: 0;
-	z-index: 99999;
-}
-.cursor2,.cursor3{
-	height: 26px;
-	width: 26px;
-	z-index:99998;
-	-webkit-transition:all 0.05s ease-out;
-	transition:all 0.05s ease-out
-}
-.cursor2.hover,
-.cursor3.hover{
-	-webkit-transform:scale(2) translateX(-25%) translateY(-25%);
-	transform:scale(2) translateX(-25%) translateY(-25%);
-	border:none
-}
-.cursor2{
-	border: 2px solid #fff;
-}
-.cursor2.hover{
-	background: rgba(255,255,255,1);
+.cursor3,
+.cursor-dot {
+    position: fixed;
+    border-radius: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+    -webkit-transition: all 50ms linear;
+    transition: all 50ms linear;
 }
 
-@media screen and (max-width: 1200px){
-	.cursor,.cursor2,.cursor3{
-		display: none
-	}
+.cursor {
+    background-color: #fff;
+    height: 0;
+    width: 0;
+    z-index: 99999;
+}
+
+.cursor2, .cursor3 {
+    height: 26px;
+    width: 26px;
+    z-index: 99998;
+    -webkit-transition: all 0.05s ease-out;
+    transition: all 0.05s ease-out;
+}
+
+.cursor2.hover, .cursor3.hover {
+    -webkit-transform: scale(2) translateX(-25%) translateY(-25%);
+    transform: scale(2) translateX(-25%) translateY(-25%);
+    border: none;
+}
+
+.cursor2 {
+    border: 2px solid #fff;
+}
+
+.cursor2.hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+.cursor-dot {
+    background-color: #fff;
+    height: 6px; /* Adjust the size of the dot as needed */
+    width: 6px; /* Adjust the size of the dot as needed */
+    z-index: 99997; /* Position the dot between cursor2 and cursor3 */
 }
 
 
@@ -367,7 +373,7 @@ section {
     transition: background 0.3s ease;
   }
   .header.scrolled {
-    background-color: #1f9dc4;
+    background-color: var(--color-primary);
   }
 .header.sticked {
   position: fixed;
@@ -829,6 +835,32 @@ play button =======================
 	display: block;
 	position: absolute;
 	overflow: hidden;
+  margin-top: 10px;
+  }
+  .play-btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .play-btn-container {
+      margin-top: 30px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .play-btn-container  {
+      margin-top: 30px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+    }
   }
   
   .play-btn:before {
@@ -2040,6 +2072,11 @@ play button =======================
   background-position: center;
   margin-top: 0;
 }
+.hero h1{
+  font-size: 44px;
+  font-weight: 700;
+  position: relative;
+}
 
 .hero::before {
   content: "";
@@ -2052,6 +2089,25 @@ play button =======================
   z-index: -10; 
 }
 
+.typing-text{
+  display: block; 
+  font-size: 35px;
+  height: 35px;
+}
+
+@media (max-width: 768px) {
+  .typing-text {
+    height: 5px;
+    font-size: medium;
+  }
+}
+
+@media (max-width: 480px) {
+  .typing-text {
+    height: 5px;
+    font-size: medium;
+  }
+}
 .hero .container{
   margin-top: 40px;
 }
@@ -2101,7 +2157,6 @@ play button =======================
   color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   margin-bottom: 30px;
-  font-size: 28px;
 }
 
 .hero .btn-get-started {
@@ -2154,48 +2209,47 @@ play button =======================
   }
 }
 
-.hero .icon-boxes {
-  padding-bottom: 60px;
-}
 
+/*------------------------------------
+----------Icon boxes------------------
+------------------------------------*/
 @media (min-width: 1200px) {
-  .hero .icon-boxes:before {
+  .icon-boxes:before {
     content: "";
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
-    height: calc(50% + 20px);
-    background-color: #0f324e;
+    height: calc(40% + 20px);
   }
 }
 
-.hero .icon-box {
+.icon-box {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
   background: #0e80dd;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
-  border-radius: 50px;
+  border-radius: 20px;
   z-index: 1;
   height: 100%;
   width: 100%;
   text-align: center;
 }
 
-.hero .icon-box .title {
+.icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
 }
 
-.hero .icon-box .title a {
-  color: #000000;
+.icon-box .title a {
+  color: #ffff;
   transition: 0.3s;
 }
 
-.hero .icon-box .icon {
+.icon-box .icon {
   margin-bottom: 20px;
   padding-top: 10px;
   display: inline-block;
@@ -2205,16 +2259,53 @@ play button =======================
   color: rgba(255, 255, 255, 0.6);
 }
 
-.hero .icon-box:hover {
+.icon-box:hover {
   background: blue;
 }
 
-.hero .icon-box:hover .title a,
-.hero .icon-box:hover .icon {
+.icon-box:hover .title a,
+.icon-box:hover .icon {
   color: #fff;
 }
 .hero img{
-  width: 400px;
+  width: 200%;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    margin-top: 20px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero img {
+    margin-top: 10px;
+    width: 250px;
+  }
+}
+
+.hero-row{
+  margin-top: 120px;
+}
+@media (max-width: 768px) {
+  .hero-row{
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-row{
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
 }
 /*--------------------------------------------------------------
 # Blog
