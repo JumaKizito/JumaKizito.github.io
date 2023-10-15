@@ -103,8 +103,29 @@ section {
   font-weight: 700;
   position: relative;
 }
+
+.breadcrumbs .img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .breadcrumbs img{
   width: 400px;
+}
+@media (max-width: 768px) {
+  .breadcrumbs img {
+    width: 300px;
+    margin-left: 10;
+    margin-right: 10;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumbs img {
+    width: 270px;
+    margin: 20px;
+  }
 }
 .breadcrumbs .page-header::before {
   content: "";
