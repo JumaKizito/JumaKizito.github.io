@@ -2884,7 +2884,7 @@ play button =======================
 .footer {
   font-size: 14px;
   background-color: var(--color-default);
-  padding: 50px 0;
+  padding:0;
   color: white;
 }
 
