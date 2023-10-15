@@ -2883,9 +2883,9 @@ play button =======================
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: ;
+  background-color: rgb(34, 7, 77) ;
   padding:0;
-  color: rgb(34, 7, 77);
+  color: white;
 }
 
 .footer .footer-info .logo {
