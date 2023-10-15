@@ -2883,7 +2883,7 @@ play button =======================
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: var(--color-default);
+  background-color: light orange;
   padding:0;
   color: white;
 }
@@ -2993,7 +2993,7 @@ play button =======================
   color: #fff;
 }
 .copyright{
-  background-color:  #0c0c0c;
+  background-color:  light orange;
   margin-bottom: 0;
 }
 
