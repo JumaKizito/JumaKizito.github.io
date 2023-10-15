@@ -8,7 +8,7 @@
 /* Colors */
 :root {
   --color-default: #222222;
-  --color-primary:  orange;
+  --color-primary:  rgb(34, 7, 77);
   --color-secondary: #081586;
 }
 
@@ -2993,7 +2993,7 @@ play button =======================
   color: #fff;
 }
 .copyright{
-  background-color: #FFD580;
+  background-color: rgb(34, 7, 77);
   margin-bottom: 0;
 }
 
