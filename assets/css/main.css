@@ -2992,7 +2992,10 @@ play button =======================
 .footer .credits a {
   color: #fff;
 }
-
+.copyright{
+  background-color:  #0c0c0c;
+  margin-bottom: 0;
+}
 
 
 
