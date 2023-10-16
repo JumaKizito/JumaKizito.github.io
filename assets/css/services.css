@@ -19,7 +19,7 @@
 	transition: all 0.5s;
 	z-index: 997;
 	height: 90px;
-	background-color: #1f9dc4!important;
+	background-color: rgb(34, 7, 77)!important;
 	}
   .header-service.sticked {
 	position: fixed;
