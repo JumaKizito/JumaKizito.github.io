@@ -21,6 +21,8 @@
 # General
 --------------------------------------------------------------*/
 body {
+  overflow-x: hidden;
+  width: 100%;
   font-family: var(--font-default);
   color: #fff;
   background:  linear-gradient(300deg,rgba(40, 226, 139, 0.950),rgba(206, 24, 206, 0.959), rgba(14, 16, 124, 0.952));
@@ -804,8 +806,8 @@ section {
   max-height: 300px;
 }
 .about-gif{
-  width: 250px;
-  height: 200px;
+  width: 350px;
+  height: 300px;
 }
 .about .call-us {
   left: 10%;
@@ -1443,174 +1445,6 @@ play button =======================
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
---------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: rgba(255, 255, 255, 0.7);
-  opacity: 1;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-.portfolio-details .swiper-button-prev,
-.portfolio-details .swiper-button-next {
-  width: 48px;
-  height: 48px;
-}
-
-.portfolio-details .swiper-button-prev:after,
-.portfolio-details .swiper-button-next:after {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.2);
-  font-size: 24px;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-@media (max-width: 575px) {
-
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
-    display: none;
-  }
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-info h3:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--color-primary);
-  left: 0;
-  bottom: 0;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 15px;
-  font-size: 16px;
-}
-
-.portfolio-details .portfolio-info ul strong {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #9c9c9c;
-  font-size: 12px;
-}
-
-.portfolio-details .portfolio-info .btn-visit {
-  padding: 8px 40px;
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-.portfolio-details .portfolio-info .btn-visit:hover {
-  background: #009d8b;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-.portfolio-details .portfolio-description .testimonial-item {
-  padding: 30px 30px 0 30px;
-  position: relative;
-  background: white;
-  height: 100%;
-  margin-bottom: 50px;
-}
-
-.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50px;
-  border: 6px solid #fff;
-  float: left;
-  margin: 0 10px 0 0;
-}
-
-.portfolio-details .portfolio-description .testimonial-item h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 15px 0 5px 0;
-  padding-top: 20px;
-}
-
-.portfolio-details .portfolio-description .testimonial-item h4 {
-  font-size: 14px;
-  color: #6c757d;
-  margin: 0;
-}
-
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: #009d8b;
-  font-size: 26px;
-  line-height: 0;
-}
-
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.portfolio-details .portfolio-description .testimonial-item p {
-  font-style: italic;
-  margin: 0 0 15px 0 0 0;
-  padding: 0;
-}
-
-/*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
 .team .member {
@@ -1959,62 +1793,8 @@ play button =======================
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-container {
-  background-color: var(--color-primary);
-  height: 100%;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  justify-content: center;
-}
 
-.contact .info-item {
-  width: 100%;
-  background-color: #1f61c4a2;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  color: #fff;
-}
-
-.contact .info-item:last-child {
-  margin-bottom: 0;
-}
-
-.contact .info-item i {
-  font-size: 20px;
-  color: #fff;
-  float: left;
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 255, 255, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
-
-.contact .info-item h4 {
-  padding: 0;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.contact .info-item:hover i {
-  background: #fff;
-  color: var(--color-primary);
-}
-
-.contact .php-email-form {
+.php-email-form {
   width: 100%;
   height: 100%;
   background:  linear-gradient(300deg,rgba(40, 226, 139, 0.950),rgba(206, 24, 206, 0.959), rgba(14, 16, 124, 0.952));
@@ -2023,11 +1803,11 @@ play button =======================
   border-radius: 0 10px 10px 0;
 }
 
-.contact .php-email-form .form-group {
+.php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form .error-message {
+.php-email-form .error-message {
   display: none;
   color: #fff;
   background: #df1529;
@@ -2036,11 +1816,11 @@ play button =======================
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.contact .php-email-form .sent-message {
+.php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #059652;
@@ -2049,14 +1829,14 @@ play button =======================
   font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
 
-.contact .php-email-form .loading:before {
+.php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -2068,30 +1848,30 @@ play button =======================
   animation: animate-loading 1s linear infinite;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.php-email-form input,
+.php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
+.php-email-form input[type=text],
+.php-email-form input[type=email],
+.php-email-form textarea {
   padding: 12px 15px;
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
+.php-email-form input[type=text]:focus,
+.php-email-form input[type=email]:focus,
+.php-email-form textarea:focus {
   border-color: var(--color-primary);
 }
 
-.contact .php-email-form textarea {
+.php-email-form textarea {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.php-email-form button[type=submit] {
   background: var(--color-primary);
   border: 0;
   padding: 14px 45px;
@@ -2100,7 +1880,7 @@ play button =======================
   border-radius: 50px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.php-email-form button[type=submit]:hover {
   background: rgba(0, 131, 116, 0.8);
 }
 
@@ -3035,7 +2815,7 @@ play button =======================
 /*--------------------------------
 Gallery Slider
 ---------------------------------*/
-
+/*
 .containerr {
   
   top: 0;
@@ -3068,4 +2848,77 @@ Gallery Slider
   width: 400px;
   height: 250px;
   border-radius: 15px;
+}
+*/
+
+/*------------------------------
+---Slider CSS logic ------------
+-------------------------------*/
+.block {
+  overflow: hidden;
+}
+.animation {
+  width: auto;
+  height: 100px;
+  font-size: 0px;
+}
+.animation img{
+  width: auto;
+  height: 250px;
+}
+.animation div {
+  display: inline-block;
+  width: auto;
+  float: none;
+  padding: 0 10px;
+}
+
+/*-------------------------------
+---   Back to top    ------------
+--------------------------------*/
+
+.back-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  transition: all 0.4s;
+}
+
+.back-to-top-button:hover {
+  background: #0056b3;
+}
+
+
+/*-------------------------------
+---   Whatsapp   ------------
+--------------------------------*/
+
+.whatsapp-chat-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+  background: #25d366;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.whatsapp-chat-button:hover {
+  background: #128c7e;
 }
