@@ -290,8 +290,10 @@ section {
 }
 
 
-.top {
+.scroll-top {
   position: fixed;
+  visibility: hidden;
+  opacity: 0;
   left: 15px;
   bottom: -15px;
   z-index: 99999;
@@ -302,18 +304,18 @@ section {
   transition: all 0.4s;
 }
 
-.top i {
+.scroll-top i {
   font-size: 24px;
   color: #fff;
   line-height: 0;
 }
 
-.top:hover {
-  background: rgba(248, 90, 64, 0.8);
+.scroll-top:hover {
+  background: rgba(82, 17, 102, 0.8);
   color: #fff;
 }
 
-.top.active {
+.scroll-top.active {
   visibility: visible;
   opacity: 1;
   bottom: 15px;
