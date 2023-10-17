@@ -2865,6 +2865,8 @@ Gallery Slider
 .animation img{
   width: auto;
   height: 250px;
+  border-radius: 15px;
+  padding: 2px;
 }
 .animation div {
   display: inline-block;
