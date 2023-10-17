@@ -402,3 +402,68 @@ document.getElementById("back-to-top-button").addEventListener("click", function
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const chatIcon = document.getElementById("whatsapp-icon");
+  const chatContainer = document.getElementById("chat-container");
+  const closeButton = document.getElementById("close-chat");
+  const sendButton = document.getElementById("send-message");
+  const userMessageInput = document.getElementById("user-message");
+  const chatMessages = document.getElementById("chat-messages");
+  const ownerWhatsAppNumber = "254742890047"; // Owner's WhatsApp number
+  let unreadMessage = false;
+
+  // Function to show the chat container
+  function showChat() {
+    chatContainer.style.display = "block";
+    chatIcon.style.display = "none";
+    // Clear unread notification when chat is opened
+    toggleUnreadNotification(false);
+  }
+
+  // Function to close the chat container
+  function closeChat() {
+    chatContainer.style.display = "none";
+    chatIcon.style.display = "block";
+  }
+
+  // Function to send a message
+  function sendMessage() {
+    const messageText = userMessageInput.value;
+    // Create a Click to Chat link with the owner's WhatsApp number and the message
+    const whatsappLink = `https://wa.me/${ownerWhatsAppNumber}?text=${encodeURIComponent(messageText)}`;
+    // Open the WhatsApp chat in a new window or tab
+    window.open(whatsappLink, "_blank");
+    // Add the user's message to the chat
+    chatMessages.innerHTML += `<div class="user-message">${messageText}</div>`;
+    // Simulate a reply from the support team
+    chatMessages.innerHTML += `<div class="support-message">Thank you for contacting us. We will get back to you shortly.</div>`;
+    // Clear the input
+    userMessageInput.value = "";
+    // Mark as unread
+    unreadMessage = true;
+    // Toggle unread notification
+    toggleUnreadNotification(true);
+  }
+
+  // Function to toggle unread message notification
+  function toggleUnreadNotification(unread) {
+    if (unread) {
+      chatIcon.style.backgroundColor = "red";
+    } else {
+      chatIcon.style.backgroundColor = "#25d366";
+    }
+  }
+
+  chatIcon.addEventListener("click", showChat);
+  closeButton.addEventListener("click", closeChat);
+  sendButton.addEventListener("click", sendMessage);
+  userMessageInput.addEventListener("input", function () {
+    toggleUnreadNotification(false);
+  });
+
+  // Initial chat state
+  closeChat();
+});
