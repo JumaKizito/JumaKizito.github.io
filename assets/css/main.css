@@ -2901,3 +2901,8 @@ Gallery Slider
   background: #0056b3;
 }
 
+
+/*---------------Whatsapp widget-------*/
+.whatsapp-widget {
+  display: none;
+}
