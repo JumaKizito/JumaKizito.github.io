@@ -2867,6 +2867,7 @@ Gallery Slider
   height: 250px;
   border-radius: 15px;
   padding: 2px;
+  border: 1.5px solid white;
 }
 .animation div {
   display: inline-block;
@@ -2905,7 +2906,7 @@ Gallery Slider
 ---   Whatsapp   ------------
 --------------------------------*/
 
-/* .whatsapp-chat-button {
+.whatsapp-chat-button {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -2923,32 +2924,5 @@ Gallery Slider
 
 .whatsapp-chat-button:hover {
   background: #128c7e;
-} */
+} 
 
-.chat-widget {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 999;
-}
-
-.whatsapp-icon {
-  display: block;
-  width: 44px;
-  height: 44px;
-  background: #25d366;
-  color: #fff;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-}
-
-.chat-container {
-  display: none;
-  border: 1px solid #ccc;
-  background: #fff;
-  max-width: 300px;
-  padding: 10px;
-}
-
-/* Add styles for chat messages, input, and buttons as needed */
