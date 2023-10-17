@@ -2810,47 +2810,6 @@ play button =======================
   margin-bottom: 0;
 }
 
-
-
-/*--------------------------------
-Gallery Slider
----------------------------------*/
-/*
-.containerr {
-  
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  border-radius: 15px;
-
-
-  animation: test-animation 230s linear infinite;
-}
-
-@keyframes test-animation {
-  0% {
-     transform: translateX(0px);
-  }
-  100% {
-    transform: translateX(-2200%);
-  }
-}
-
-.itemm {
-  margin: 0 3px;
-  border-radius: 8px;
-  display: grid;
-}
-
-.itemm img{
-  width: 400px;
-  height: 250px;
-  border-radius: 15px;
-}
-*/
-
 /*------------------------------
 ---Slider CSS logic ------------
 -------------------------------*/
@@ -2905,4 +2864,38 @@ Gallery Slider
 /*---------------Whatsapp widget-------*/
 .whatsapp-widget {
   display: none;
+}
+
+/*-------gallery page css -------------*/
+.gallery-container {
+  overflow: hidden;
+  width: 300px; /* Adjust this width as per your design */
+  height: 200px; /* Adjust this height as per your design */
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  animation: slide 10s linear infinite;
+}
+
+.gallery-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+.gallery-item img{
+  width: 400px;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-100%);
+  }
 }
