@@ -2884,8 +2884,8 @@ Gallery Slider
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
-  z-index: 9999;
+  left: 20px;
+  z-index: 9990;
   background: #007bff;
   color: #fff;
   border: none;
@@ -2900,29 +2900,4 @@ Gallery Slider
 .back-to-top-button:hover {
   background: #0056b3;
 }
-
-
-/*-------------------------------
----   Whatsapp   ------------
---------------------------------*/
-
-.whatsapp-chat-button {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  z-index: 999;
-  width: 44px;
-  height: 44px;
-  background: #25d366;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.whatsapp-chat-button:hover {
-  background: #128c7e;
-} 
 
