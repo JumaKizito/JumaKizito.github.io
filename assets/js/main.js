@@ -406,12 +406,3 @@ document.getElementById("back-to-top-button").addEventListener("click", function
 /*-----------------------------------
 --------gallery page ----------------
 ------------------------------------*/
-const galleryWrapper = document.getElementById('galleryWrapper');
-
-const firstGalleryItem = galleryWrapper.querySelector('.gallery-item');
-const clonedItem = firstGalleryItem.cloneNode(true);
-galleryWrapper.appendChild(clonedItem);
-galleryWrapper.style.animationDuration = '20s';
-
-
-
