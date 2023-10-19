@@ -1459,6 +1459,10 @@ play button =======================
 .team .member img {
   border-radius: 10px;
   overflow: hidden;
+
+}
+.team .member img:hover {
+  transform: scale(1.15);
 }
 
 .team .member .member-content {
