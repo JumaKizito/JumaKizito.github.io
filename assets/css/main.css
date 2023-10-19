@@ -2863,77 +2863,31 @@ play button =======================
 }
 
 /*-------gallery page css -------------*/
-.gallery-page {
-  padding: 10vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow-y: visible;
-  position: relative;
-  z-index: 1;
+.image-column {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
 }
 
-* {
-  box-sizing: border-box;
+.image-column img {
+    width: 100%;
+    position: relative;
 }
 
-.gallery-page h1 {
-  font-weight: 800;
-  margin: 2rem auto;
-  font-size: clamp(3vw, 2rem, 4rem);
-  text-align: center;
-  z-index: 999;
-  max-width: 800px;
-  mix-blend-mode: difference;
-  pointer-events: none;
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: grid;
-  place-items: center;
+.slide-up {
+    animation: slideUp 10s linear infinite;
 }
 
-.gallery-show {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  overflow: visible;
-  @media (max-width: 768px) {
-    width: 160%;
-  }
+.slide-down {
+    animation: slideDown 10s linear infinite;
 }
 
-.gallery-show .col {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  width: 100%;
-  align-self: flex-start;
-  justify-self: flex-start;
+@keyframes slideUp {
+    0% { top: 0; }
+    100% { top:300px; }
 }
 
-.col:nth-child(2) {
-  align-self: flex-end;
-  justify-self: flex-end;
-}
-
-.gallery-show .image {
-  width: 100%;
-  filter: saturate(100%);
-  padding: 1rem;
-}
-
-.gallery-show img {
-  transition: 0.3s ease-out;
-  overflow: hidden;
-  width: 100%;
+@keyframes slideDown {
+    0% { top: 300px; }
+    100% { top: 0; } 
 }
