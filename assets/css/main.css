@@ -1464,19 +1464,12 @@ play button =======================
   padding: 0 20px 30px 20px;
 }
 
-.team .member h4 {
-  font-weight: 700;
-  margin-top: 16px;
-  margin-bottom: 2px;
-  font-size: 20px;
-}
+
 
 .team .member span {
-  font-style: italic;
+  font-style: bold;
   display: block;
   margin-top: 16px;
-  margin-bottom: 2px;
-  font-size: 20px;
 }
 
 .team .member p {
