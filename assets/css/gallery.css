@@ -11,7 +11,7 @@ Flexbox is used as a fallback so that browsers which don't support grid will sti
 
 :root {
 	/* Base font size */
-	font-size: 10px;
+	font-size: 5px;
 }
 *,
 *::before,
@@ -37,7 +37,7 @@ body {
 	font-weight: 500;
 	text-align: center;
 	padding: 0.5rem 0;
-	color: #1a1a1a;
+	color: #fcfcfc;
   margin-top: 1px;
 }
 
