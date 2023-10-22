@@ -33,13 +33,30 @@ body {
 
 .heading1 {
 	font-family: "Gothic bold", Arial, sans-serif;
-	font-size: 2rem;
 	font-weight: 500;
 	text-align: center;
 	padding: 0.5rem 0;
 	color: #fcfcfc;
   margin-top: 1px;
 }
+@media (max-width: 768px) {
+	.heading1 {
+	  font-size: 2rem;
+	}
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+	.heading1 {
+	  font-size: 2.5rem;
+	  padding: 0.3rem 0;
+	}
+  }
+  
+  @media (min-width: 992px) {
+	.heading1 {
+	  font-size: 3rem;
+	}
+  }
 
 
 .gallery1 {
