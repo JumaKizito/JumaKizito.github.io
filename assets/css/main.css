@@ -1470,6 +1470,7 @@ play button =======================
   font-style: bold;
   display: block;
   margin-top: 16px;
+  color: #000;
 }
 
 .team .member p {
