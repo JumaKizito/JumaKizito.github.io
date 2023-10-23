@@ -28,7 +28,6 @@ body {
 	max-width: 75%;
 	margin: 0 auto;
 	padding: 0 2rem 2rem;
-  animation: scroll 20s linear infinite;
 }
 
 .heading1 {
@@ -65,6 +64,7 @@ body {
 	/* Compensate for excess margin on outer gallery flex items */
 	margin: -1rem -1rem;
   overflow: hidden;
+  animation: scroll 20s linear infinite;
   
 }
 
