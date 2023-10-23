@@ -64,7 +64,7 @@ body {
 	/* Compensate for excess margin on outer gallery flex items */
 	margin: -1rem -1rem;
   overflow: hidden;
-  animation: scroll 20s linear infinite forwards; /* Apply the animation to .gallery1 and keep the final state */
+  animation: scroll 20s linear infinite; 
   
 }
 
@@ -101,8 +101,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
 */
 
  @keyframes scroll {
-  0% {transform: translateY(0);}
-  100% {transform: translateY(-200%)}
+  0% , 100% {
+	transform: translateY(0);
+}
+  50% {
+	transform: translateY(-200%)
+}
 } 
 
 
