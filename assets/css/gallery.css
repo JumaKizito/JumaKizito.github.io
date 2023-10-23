@@ -100,14 +100,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
 */
 
- @keyframes scroll {
-  0% , 100% {
-	transform: translateY(0);
+@keyframes scroll {
+	0% { transform: translateY(0); }
+	100% { transform: translateY(calc(-250px * 7))}
 }
-  50% {
-	transform: translateY(-200%)
-}
-} 
 
 
   
