@@ -64,7 +64,7 @@ body {
 	/* Compensate for excess margin on outer gallery flex items */
 	margin: -1rem -1rem;
   overflow: hidden;
-  animation: scroll 50s linear infinite; 
+  animation: scroll 70s linear infinite; 
   
 }
 
@@ -84,7 +84,7 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	transition: transform 400ms ease-out;
+	
   border-radius: 10px;
 }
 
