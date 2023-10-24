@@ -64,7 +64,7 @@ body {
 	/* Compensate for excess margin on outer gallery flex items */
 	margin: -1rem -1rem;
   overflow: hidden;
-  animation: scroll 60s linear infinite; 
+  animation: scroll 40s linear infinite; 
   
 }
 
@@ -76,7 +76,7 @@ body {
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
   border-radius: 10px;
-  border: 1px solid rgb(23, 8, 77);
+  border: 3px solid rgb(23, 8, 77);
 }
 
 .gallery1-image {
