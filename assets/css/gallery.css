@@ -31,7 +31,7 @@ body {
 }
 
 .heading1 {
-	font-family: "Gothic bold", Arial, sans-serif;
+	font-family: 'Merienda', cursive;
 	font-weight: 500;
 	text-align: center;
 	padding: 0.5rem 0;
@@ -59,9 +59,11 @@ body {
 h5{
 	font-size: 2rem;
 	font-weight: 800;
+	font-family: 'Merienda', cursive;
 }
 p{
 	font-size: 1.3rem;
+	font-family: 'Merienda', cursive;
 }
 a{
 	font-family: 'Merienda', cursive;
