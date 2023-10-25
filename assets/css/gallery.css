@@ -56,28 +56,33 @@ body {
 	  font-size: 3rem;
 	}
   }
-
-
+h5{
+	font-size: 2rem;
+	font-weight: 800;
+}
+p{
+	font-size: 1.3rem;
+}
+.nav-link{
+	font-size: 1.5rem;
+}
 .gallery1 {
 	display: flex;
 	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
 	margin: -1rem -1rem;
-  overflow: hidden;
-  animation: scroll 40s linear infinite; 
+  	overflow: hidden;
+  	animation: scroll 40s linear infinite; 
   
 }
 
 .gallery1-item {
-	/* Minimum width of 24rem and grow to fit available space */
 	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
 	margin: 1rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 	overflow: hidden;
-  border-radius: 10px;
-  border: 3px solid rgb(23, 8, 77);
-}
+	border-radius: 10px;
+	border: 3px solid rgb(23, 8, 77);
+	}
 
 .gallery1-image {
 	display: block;
@@ -92,13 +97,6 @@ body {
 	transform: scale(1.15);
 }
 
-/*
-
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-
-*/
 
 @keyframes scroll {
 	0% { transform: translateY(0); }
@@ -106,4 +104,21 @@ Remove or comment-out the code block below to see how the browser will fall-back
 }
 
 
+@media (max-width: 767px) {
+	.sidebar{
+		visibility: hidden;
+	}
+  }
+  
+@media (min-width: 768px) and (max-width: 1023px) {
+	.sidebar{
+		visibility: hidden;
+	}
+}
+@media (min-width: 1024px) and (max-width: 1279px) {
+	.sidebar{
+		visibility: hidden;
+	}
+}
+  
   
