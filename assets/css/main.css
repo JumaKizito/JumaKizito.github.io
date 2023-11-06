@@ -131,7 +131,8 @@ section {
 }
 
 .breadcrumbs .about-page-img {
-  width: 300px;
+  width: 300px;border-radius: 50%; 
+  border: 2px solid blue;
 }
 
 @media (max-width: 768px) {
