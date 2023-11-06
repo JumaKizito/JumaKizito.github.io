@@ -131,19 +131,24 @@ section {
 }
 
 .breadcrumbs .about-page-img {
-  width: 300px;border-radius: 50%; 
+  width: 300px;
+  border-radius: 50%; 
   border: 2px solid blue;
 }
 
 @media (max-width: 768px) {
   .breadcrumbs .about-page-img {
     width: 250px;
+    border-radius: 50%; 
+    border: 2px solid blue;
   }
 }
 
 @media (max-width: 480px) {
   .breadcrumbs .about-page-img {
     width: 200px;
+    border-radius: 50%; 
+    border: 2px solid blue;
   }
 }
 
@@ -155,12 +160,16 @@ section {
 
 .breadcrumbs .about-page-img {
   width: 450px;
+  border-radius: 50%; 
+  border: 2px solid blue;
 }
 
 @media (max-width: 768px) {
   .breadcrumbs .about-page-img {
     margin-top: 30px;
     width: 300px;
+    border-radius: 50%; 
+    border: 2px solid blue;
   }
 }
 
@@ -168,6 +177,8 @@ section {
   .breadcrumbs .about-page-img {
     margin-top: 50px;
     width: 250px;
+    border-radius: 50%; 
+    border: 2px solid blue;
   }
 }
 
