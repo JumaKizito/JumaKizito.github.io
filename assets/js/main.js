@@ -402,7 +402,3 @@ document.getElementById("back-to-top-button").addEventListener("click", function
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
-
-/*-----------------------------------
---------gallery page ----------------
-------------------------------------*/
