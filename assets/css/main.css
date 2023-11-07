@@ -182,6 +182,48 @@ section {
   }
 }
 
+/* image of about */
+.breadcrumbs .about-pagee-img {
+  width: 300px;
+  border-radius: 50%; 
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .about-pagee-img {
+    width: 250px;
+    border-radius: 50%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumbs .about-pagee-img {
+    width: 200px;
+    border-radius: 50%; 
+  }
+}
+.breadcrumbs .about-pagee-img {
+  width: 450px;
+  border-radius: 50%; 
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs .about-pagee-img {
+    margin-top: 30px;
+    width: 300px;
+    border-radius: 50%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrumbs .about-pagee-img {
+    margin-top: 50px;
+    width: 250px;
+    border-radius: 50%; 
+  }
+}
+
+/* image of about */
+
 .breadcrumbs .page-header::before {
   content: "";
   position: absolute;
