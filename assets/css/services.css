@@ -68,16 +68,22 @@
 .service-img img {
 	width: 70%;
 	height: auto;
+	border-radius: 50%; 
+    border: 2px solid blue;
 }
 
 @media (max-width: 768px) {
 	.service-img img {
 		width: 90%;
+		border-radius: 50%; 
+		border: 2px solid blue;
 	}
 }
 
 @media (max-width: 480px) {
 	.service-img img {
 		width: 90%;
+		border-radius: 50%; 
+		border: 2px solid blue;
 	}
 }
